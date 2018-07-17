@@ -1,0 +1,35 @@
+html, body {
+    background-image: url("../images/images.jpg");
+    background-repeat: repeat;
+}
+.jumbotron{
+  background-color:cyan;
+  color: darkcyan;
+  font-family: fantasy;
+  text-align: center;
+}
+.form-group{
+background-color: cyan;
+color: darkcyan;
+font-family: fantasy;
+width: 100%;
+margin: auto;
+}
+.table-table-md {
+    background-color: cyan;
+    color: darkcyan;
+    font-family: fantasy; 
+    margin: auto;
+    width: 100%;
+    
+}
+form, h3{
+    background-color: cyan;
+    color: darkcyan;
+    font-family: fantasy; 
+}
+thead {
+    background-color: cyan;
+    color: darkcyan;
+    font-family: fantasy;   
+}

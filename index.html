@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lynette's Train Schedule!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1> ALL ABOARD!!!!!!</h1>
+            <h3>Choo-Choo!!!!!!!!!!</h3>
+        </div>
+    </div>
+    <form>
+        <h3>Add Train</h3>
+        <div class="form-group">
+            <label for="Input-Train-Name"> Train Name</label>
+            <input type="name" class="form-control" id="Input-Train-Name" placeholder="Train Name">
+        </div>
+        <div class="form-group">
+            <label for="Destination">Destination</label>
+            <input type="destination" class="form-control" id="Destination-Input" placeholder="Destination">
+        </div>
+        <div class="form-group">
+            <label for="First-Train-Time">First Train Time(HH:MM-Military Time)</label>
+            <input type="Departure" class="form-control" id="Time-Input" placeholder="Departure">
+        </div>
+        <div class="form-group">
+            <label for="Frequency">Frequency(min)</label>
+            <input type="Minutes" class="form-control" id="Minutes-Input" placeholder="Frequency">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br/>
+    <table class="table-table-md">
+        <thead>
+            <h3>Current Train Schedule</h3>
+            <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="javascript/train.js"></script>
+</body>
+
+</html>
