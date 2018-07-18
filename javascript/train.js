@@ -37,6 +37,10 @@ database.ref().on("child_added", function (snapshot) {
     console.log(StartTime);
     var Minutes = snapshot.val().Frequency;
     console.log(Minutes);
+    var start=moment(StartTime, "HH:mm");
+    console.log(start);
+    var diff=moment(start).diff(moment(), "minutes");
+    console.log(diff);
     
 
     // https://momentjs.com
@@ -49,10 +53,16 @@ database.ref().on("child_added", function (snapshot) {
     var newRow=$("<tr>").append(
         $("<td>").text(Train),
         $("<td>").text(Place),
-        $("<td>").text(StartTime),
         $("<td>").text(Minutes),
+        $("<td>").text(StartTime),
+        $("<td>").text(diff),
+
+       
     )
 
     $('table tbody').append(newRow);
 
-})
+}, 
+function(err) {
+    console.log(err);
+});
